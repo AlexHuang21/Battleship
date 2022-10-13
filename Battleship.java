@@ -367,7 +367,7 @@ public class Battleship {
         }
 
         int currentx = 0, currenty = 0;
-        boolean foolean = true;
+        boolean check = true;
         int count = 2;
         int hitCount1 = 0;
         int hitCount2 = 0;
@@ -390,7 +390,7 @@ public class Battleship {
             System.out.println();
         }
 
-        while (foolean) {
+        while (check) {
             try {
 
                 if (count % 2 == 0) {
@@ -511,7 +511,7 @@ public class Battleship {
                     }
                     if (hitCount2 == 14) {
                         System.out.println("\nPlayer 2 wins!\n");
-                        foolean = false;
+                        check = false;
                     }
                 }
 
